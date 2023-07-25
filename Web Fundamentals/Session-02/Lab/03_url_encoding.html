@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>URL Encoding Example</title>
+</head>
+<!-- URL encoding should be used whenever you need to include special characters in a URL. 
+    Special characters, such as spaces, ampersands, question marks, and slashes, 
+    have special meanings in URLs and can cause issues if they are not properly encoded. -->
+
+<body>
+    <h1>URL Encoding Example</h1>
+    <p>Original URL: <a href="https://www.example.com/search?q=coffee & tea">https://www.example.com/search?q=coffee &
+            tea</a></p>
+    <p>Encoded URL: <a
+            href="https://www.example.com/search?q=coffee%20%26%20tea">https://www.example.com/search?q=coffee%20%26%20tea</a>
+    </p>
+
+    <!-- Here are some examples of where you might need to use URL encoding:
+
+    Including a search query in a URL, which may contain spaces or special characters
+    Including a username or password in a URL for authentication purposes, which may contain special characters
+    Including non-ASCII characters, such as accented characters or emojis, in a URL -->
+
+    <p>Encoded using JavaScript:</p>
+    <!-- Do not worry, we will understand this javascript in later sessions -->
+    <!-- To encode URLs, you can use the built-in JavaScript function called encodeURIComponent().  -->
+    <pre>
+        const originalUrl = 'https://www.example.com/search?q=coffee & tea';
+        const encodedUrl = encodeURIComponent(originalUrl);
+        console.log(encodedUrl);
+        // Output: https%3A%2F%2Fwww.example.com%2Fsearch%3Fq%3Dcoffee%20%26%20tea
+    </pre>
+</body>
+
+</html>
