@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advanced Selectors Example</title>
+    <style>
+        /* General Sibling Selector: Targets all p elements that are siblings of h1 elements */
+        h1~p {
+            color: blue;
+        }
+
+        /* Adjacent Sibling Selector: Targets the immediate sibling p element of h2 element */
+        h2+p {
+            color: green;
+        }
+
+        /* Attribute Selector: Targets all elements with href attribute that starts with "https://" */
+        [href^="https://"] {
+            color: red;
+        }
+
+        /* Child Selector: Targets all li elements that are direct children of ul elements */
+        ul>li {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <p>Paragraph 1</p> <!-- General Sibling Selector will target this p element -->
+    <p>Paragraph 2</p> <!-- General Sibling Selector will target this p element -->
+    <h2>Heading 2</h2>
+    <p>Paragraph 3</p> <!-- Adjacent Sibling Selector will target this p element -->
+    <ul>
+        <li><a href="https://example.com">Link 1</a></li> <!-- Attribute Selector will target this a element -->
+        <li><a href="http://example.com">Link 2</a></li>
+        <li><a href="https://example.org">Link 3</a></li> <!-- Attribute Selector will target this a element -->
+    </ul>
+    <div>
+        <p>Paragraph 4</p>
+    </div>
+</body>
+
+</html>

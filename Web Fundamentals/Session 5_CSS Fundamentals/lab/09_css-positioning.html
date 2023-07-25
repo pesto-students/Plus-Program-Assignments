@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Positioning Example</title>
+    <style>
+        /* Position: static (default) */
+        .static-example {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Position: relative */
+        .relative-example {
+            position: relative;
+            /* Set position property to relative */
+            top: 20px;
+            /* Set top offset to 20 pixels */
+            left: 20px;
+            /* Set left offset to 20 pixels */
+            background-color: #d4edda;
+            /* Set background color to distinguish */
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Position: absolute */
+        .absolute-example {
+            position: absolute;
+            /* Set position property to absolute */
+            top: 20px;
+            /* Set top offset to 20 pixels */
+            right: 20px;
+            /* Set right offset to 20 pixels */
+            background-color: #f8d7da;
+            /* Set background color to distinguish */
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Position: fixed */
+        .fixed-example {
+            position: fixed;
+            /* Set position property to fixed */
+            bottom: 20px;
+            /* Set bottom offset to 20 pixels */
+            right: 20px;
+            /* Set right offset to 20 pixels */
+            background-color: #cce5ff;
+            /* Set background color to distinguish */
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static-example">
+        <p>This is a static positioned element (default).</p>
+        <p>Static positioned elements are positioned according to the normal flow of the page.</p>
+    </div>
+    <div class="relative-example">
+        <p>This is a relatively positioned element.</p>
+        <p>Relative positioned elements are positioned relative to their normal position in the document flow.</p>
+    </div>
+    <div class="absolute-example">
+        <p>This is an absolutely positioned element.</p>
+        <p>Absolutely positioned elements are positioned relative to the nearest positioned ancestor (if any), otherwise
+            relative to the initial containing block (usually the viewport).</p>
+    </div>
+    <div class="fixed-example">
+        <p>This is a fixed positioned element.</p>
+        <p>Fixed positioned elements are positioned relative to the viewport and do not move when the page is scrolled.
+        </p>
+    </div>
+</body>
+
+</html>

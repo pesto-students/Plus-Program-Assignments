@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display Property Example</title>
+    <style>
+        /* Display: block */
+        .block-example {
+            display: block;
+            /* Set display property to block */
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Display: inline */
+        .inline-example {
+            display: inline;
+            /* Set display property to inline */
+            background-color: #f8f8f8;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        /* Display: inline-block */
+        .inline-block-example {
+            display: inline-block;
+            /* Set display property to inline-block */
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        /* Display: none */
+        .none-example {
+            display: none;
+            /* Set display property to none */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block-example">
+        <p>This is a block-level element.</p>
+        <p>Block-level elements take up the full width of their parent container and stack on top of each other by
+            default.</p>
+    </div>
+    <span class="inline-example">
+        This is an inline element.
+        <br>
+        Inline elements only take up the space they need and do not cause line breaks.
+    </span>
+    <div class="inline-block-example">
+        This is an inline-block element.
+        <br>
+        Inline-block elements behave like inline elements but can have width, height, padding, and margin properties.
+    </div>
+    <p class="none-example">
+        This element has the display property set to none, and it is hidden from the view.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pseudo-classes and Pseudo-elements Example</title>
+    <style>
+        /* Pseudo-class: Targets the anchor element when hovered */
+        a:hover {
+            color: red;
+        }
+
+        /* Pseudo-class: Targets the first child element of a paragraph */
+        p:first-child {
+            font-weight: bold;
+        }
+
+        /* Pseudo-class: Targets the last child element of a paragraph */
+        p:last-child {
+            font-style: italic;
+        }
+
+        /* Pseudo-element: Targets the first letter of a paragraph */
+        p::first-letter {
+            font-size: 24px;
+        }
+
+        /* Pseudo-element: Targets the content after an element with class 'after' */
+        .after::after {
+            content: " (after)";
+            color: green;
+        }
+
+        /* Pseudo-element: Targets the content before an element with class 'before' */
+        .before::before {
+            content: " (before)";
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Thanos- Pseudo-classes and Pseudo-elements Example</h1>
+    <p>This is a Thanos paragraph with some text. The first letter of this paragraph will have a larger font size due to
+        the
+        ::first-letter pseudo-element.</p>
+    <p class="after">This is another Thanos paragraph with some text. The text "(after)" will be added after this
+        paragraph
+        using the ::after pseudo-element.</p>
+    <p class="before">This is a third paragraph with some text. The text "(before)" will be added before this paragraph
+        using the ::before pseudo-element.</p>
+    <a href="#">Hover over me</a> <!-- The :hover pseudo-class will change the color of this link when hovered over -->
+</body>
+
+</html>

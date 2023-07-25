@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS !important Example</title>
+    <style>
+        /* Parent container */
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        /* Child element with !important property */
+        .child1 {
+            width: 100px !important;
+            /* Set width to 100px with !important property */
+            height: 100px;
+            background-color: #d4edda;
+        }
+
+        /* Child element without !important property */
+        .child2 {
+            /* Set width to container */
+            height: 100px;
+            background-color: #f8d7da;
+        }
+
+        /* Child element without !important property */
+        .child3 {
+            /* Set width to container */
+            height: 100px;
+            background-color: #cce5ff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child1">
+            <p>Child 1</p>
+        </div>
+        <div class="child2">
+            <p>Child 2</p>
+        </div>
+        <div class="child3">
+            <p>Child 3</p>
+        </div>
+    </div>
+</body>
+
+</html>

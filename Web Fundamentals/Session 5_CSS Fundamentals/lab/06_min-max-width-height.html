@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Button and Paragraph with Min/Max Width/Height with overflow example</title>
+    <style>
+        /* Button with min-width and max-width properties */
+        .my-button {
+            min-width: 100px;
+            /* Set minimum width to 100px */
+            max-width: 200px;
+            /* Set maximum width to 200px */
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Paragraph with min-height and max-height properties */
+        .my-paragraph {
+            min-height: 30px;
+            /* Set minimum height to 50px */
+            max-height: 40px;
+            /* Set maximum height to 100px */
+            padding: 20px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            /* Uncomment this and see and explain overflow property*/
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="my-button">Click Me</button>
+    <button class="my-button">Click Me with Max width property</button>
+    <p class="my-paragraph">This is a paragraph with minimum height</p>
+    <p class="my-paragraph">This is a paragraph with minimum and maximum height properties applied. The minimum height
+        is set to 30px, and the maximum height is set to 40px. If the content exceeds the maximum height, a scrollbar
+        will appear, allowing users to scroll and view the entire content. If the content is less than the minimum
+        height, the paragraph will expand to the minimum height value.
+        adding some more content to appear the scroll bar, This is a paragraph with minimum and maximum height
+        properties applied. The minimum height
+        is set to 30px, and the maximum height is set to 40px. If the content exceeds the maximum height, a scrollbar
+        will appear, allowing users to scroll and view the entire content. If the content is less than the minimum
+        height, the paragraph will expand to the minimum height value.
+    </p>
+</body>
+
+</html>

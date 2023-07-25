@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS z-index Example</title>
+    <style>
+        /* Parent container */
+        .container {
+            position: relative;
+            /* Set position property to relative */
+            height: 300px;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        /* First child element */
+        .child1 {
+            position: absolute;
+            /* Set position property to absolute */
+            top: 20px;
+            /* Set top offset to 20 pixels */
+            left: 20px;
+            /* Set left offset to 20 pixels */
+            width: 100px;
+            height: 100px;
+            background-color: #d4edda;
+            /* Set background color to distinguish */
+            z-index: 1;
+            /* Set z-index property to 1 (higher value) */
+        }
+
+        /* Second child element */
+        .child2 {
+            position: absolute;
+            /* Set position property to absolute */
+            top: 40px;
+            /* Set top offset to 40 pixels */
+            left: 40px;
+            /* Set left offset to 40 pixels */
+            width: 100px;
+            height: 100px;
+            background-color: #f8d7da;
+            /* Set background color to distinguish */
+            z-index: 2;
+            /* Set z-index property to 2 (higher value) */
+        }
+
+        /* Third child element */
+        .child3 {
+            position: absolute;
+            /* Set position property to absolute */
+            top: 60px;
+            /* Set top offset to 60 pixels */
+            left: 60px;
+            /* Set left offset to 60 pixels */
+            width: 100px;
+            height: 100px;
+            background-color: #cce5ff;
+            /* Set background color to distinguish */
+            z-index: -1;
+            /* Set z-index property to -1 (lower value) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child1">
+            <p>Child 1</p>
+        </div>
+        <div class="child2">
+            <p>Child 2</p>
+        </div>
+        <div class="child3">
+            <p>Child 3</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box Model Example with Text Overflow</title>
+    <style>
+        /* Define a class with box model properties */
+        .box {
+            width: 500px;
+            height: 500px;
+            margin: 20px;
+            padding: 30px;
+            border: 5px solid #000;
+            background-color: #f8f8f8;
+            box-sizing: border-box;
+            /* Include border and padding in element's total width/height */
+        }
+
+        /* Define a class with a nested box inside */
+        .content-box {
+            width: 500px;
+            height: 500px;
+            margin: 20px;
+            padding: 30px;
+            border: 5px solid #000;
+            background-color: #f8f8f8;
+            box-sizing: content-box;
+            /* Exclude border and padding from element's total width/height */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Box Model-Border Box Example</h1>
+        <p>This is a div with box model properties applied. It has margin, padding, and border, which affect its total
+            size and spacing. This is a long text that may overflow, but the word-wrap property prevents it from causing
+            horizontal scrollbars.</p>
+
+    </div>
+    <div class="content-box">
+        <h2>Content Box- Since thix excludes border and padding, it increases</h2>
+        <p>This is a nested div inside the parent box. It also has box model properties applied, but with different
+            values. Note how the content box size is affected by the padding and border, as per the box-sizing
+            property. This is another long text that may overflow, but the word-wrap property prevents it from
+            causing horizontal scrollbars.</p>
+    </div>
+</body>
+
+</html>
