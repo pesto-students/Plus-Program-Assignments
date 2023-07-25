@@ -2,14 +2,25 @@
 
 ![](Aspose.Words.b6f508f0-f8c9-4eab-bc23-c82311e41900.001.png)
 
-Your webpage must meet the following requirements:
+# Hometown Name
 
-1. Saved in a file called index.html.
-1. Specifies an appropriate webpage title with <title> tags.
-1. Uses <h1> tags containing the hometown name followed by 3 sections, each using <section> tags.
-1. The 1st section should contain a heading in <h2> tags entitled "Location". A single paragraph should briefly describe the town's location.
-1. The 2nd section should contain a heading in <h2> tags entitled "About". Create at least 3 subsections that each use <section> tags with <h3> headings. Each subsection should have a single paragraph describing something about your hometown.
-1. The 3rd section should contain a heading in <h2> tags entitled "Things To Do". Create an unordered list of interesting things to do in your hometown.
+## Location
+A brief description of the town's location goes here.
+
+## About
+### Subsection 1
+A paragraph describing something about the hometown goes here.
+
+### Subsection 2
+A paragraph describing something else about the hometown goes here.
+
+### Subsection 3
+A paragraph describing another aspect of the hometown goes here.
+
+## Things To Do
+- Visit the historic landmarks.
+- Explore the beautiful parks and nature reserves.
+- Try out the local cuisine and restaurants.
 
 **Instructions:**
 
