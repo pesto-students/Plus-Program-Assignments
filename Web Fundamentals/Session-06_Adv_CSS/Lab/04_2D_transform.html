@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS 2D Transforms Example</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            /* Remove the initial transform */
+        }
+
+        .container:hover {
+            transform: rotate(30deg) scale(1.2) skewX(20deg);
+            /* Apply the 2D transforms only on hover */
+            /* transform syntax: transform: <transform-function> <value>; */
+            /* rotate: rotates the element by a specified degree */
+            /* scale: scales the element by a specified factor */
+            /* skewX: skews the element along the X-axis by a specified angle */
+            /* You can chain multiple transform functions together for combined effects */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS 2D Transforms Example</h1>
+        <p>This is a simple example of CSS 2D transforms.</p>
+    </div>
+
+</body>
+
+</html>

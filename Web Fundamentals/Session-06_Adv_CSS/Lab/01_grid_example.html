@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Define the grid container */
+        .grid-container {
+            display: grid;
+            /* Specifies that the element is a grid container */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* Defines the columns of the grid with equal width */
+            grid-template-rows: auto;
+            /* Defines the rows of the grid with auto height */
+            gap: 10px;
+            /* Specifies the gap (margin) between grid items */
+            justify-items: center;
+            /* Centers the grid items along the horizontal axis */
+            align-items: center;
+            /* Centers the grid items along the vertical axis */
+        }
+
+        /* Define the grid items */
+        .grid-item {
+            border: 1px solid black;
+            /* Adds a border around each grid item */
+            padding: 20px;
+            /* Adds padding inside each grid item */
+            text-align: center;
+            /* Centers the text inside each grid item */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+    </div>
+
+</body>
+
+</html>

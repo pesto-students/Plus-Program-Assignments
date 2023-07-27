@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS 3D Transforms Example</title> <!-- Added title for the HTML document -->
+    <style>
+        .container {
+            width: 200px;
+            /* Set the width of the container */
+            height: 200px;
+            /* Set the height of the container */
+            background-color: #f0f0f0;
+            /* Set the background color of the container */
+            transform-style: preserve-3d;
+            /* Specifies how child elements of a 3D transformed element are rendered */
+            /* transform-style syntax: transform-style: <value>; */
+            /* preserve-3d: Child elements preserve their 3D positions and are drawn in 3D space */
+            /* flat: Child elements are flattened into a single 2D plane */
+            transform: rotateY(30deg) scale(1.2) skewX(20deg);
+            /* Apply the 3D transforms to the container */
+            /* transform syntax: transform: <transform-function> <value>; */
+            /* rotateY: rotates the element around the Y-axis by a specified degree */
+            /* scale: scales the element by a specified factor */
+            /* skewX: skews the element along the X-axis by a specified angle */
+            /* You can chain multiple transform functions together for combined effects */
+            transition: transform 0.5s;
+            /* Add a transition effect for smooth animation */
+            /* transition syntax: transition: <property> <duration> <timing-function>; */
+            /* transform: The CSS property being transitioned */
+            /* 0.5s: The duration of the transition animation in seconds */
+        }
+
+        .container:hover {
+            transform: rotateY(0deg) scale(1) skewX(0deg);
+            /* Apply the 3D transforms only on hover */
+            /* The element will revert to its original state when hover is removed */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS 3D Transforms Example</h1> <!-- Added h1 element for the title -->
+        <p>This is a simple example of CSS 3D transforms.</p>
+    </div>
+
+</body>
+
+</html>

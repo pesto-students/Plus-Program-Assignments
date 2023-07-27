@@ -1,0 +1,11 @@
+p:nth-child(5) {
+   background: revert;
+   box-shadow: revert;
+   padding: revert;
+}
+
+a {
+   font-size: 12px;
+}
+
+/* Add styles here */

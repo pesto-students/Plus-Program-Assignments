@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sass Example</title>
+    <style>
+        /* Define Sass variables */
+        $primary-color: #ff0000;
+        $secondary-color: #00ff00;
+        $text-color: #000000;
+
+        /* Define a Sass mixin */
+        @mixin card-style {
+            background-color: $secondary-color;
+            padding: 20px;
+            border: 1px solid $primary-color;
+            color: $text-color;
+        }
+
+        /* Define a Sass function */
+        @function darken($color, $amount) {
+            @return darken($color, $amount);
+        }
+
+        /* Use Sass operations */
+        $padding: 10px;
+        $margin: 20px;
+        $total-space: $padding * 2 + $margin * 2;
+
+        /* Use the Sass mixin */
+        .card {
+            @include card-style;
+            margin: $margin;
+            padding: $padding;
+        }
+
+        /* Use the Sass function */
+        .text {
+            color: darken($text-color, 20%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Card Title</h1>
+        <p class="text">This is a sample card with Sass variables, mixins, functions, and operations.</p>
+    </div>
+
+</body>
+
+</html>

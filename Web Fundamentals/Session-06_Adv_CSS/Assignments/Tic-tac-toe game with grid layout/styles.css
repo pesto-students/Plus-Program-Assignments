@@ -1,0 +1,25 @@
+body {
+   font-family: Roboto, Helvetica, sans-serif;
+   text-align: center;
+}
+
+.x {
+   color: red;
+}
+
+.o {
+   color: blue;
+ }
+ 
+#board {
+   font: 85px arial, sans-serif;
+   margin: 3px;
+   
+   /* Your solution goes here */      
+
+}
+
+#board > div {
+   border: 1px solid LightSkyBlue;
+   text-align: center;
+}

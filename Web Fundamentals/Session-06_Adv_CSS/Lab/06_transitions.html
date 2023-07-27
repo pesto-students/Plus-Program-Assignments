@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Transitions Example</title> <!-- Added title for the HTML document -->
+    <style>
+        .container {
+            width: 200px;
+            /* Set the width of the container */
+            height: 200px;
+            /* Set the height of the container */
+            background-color: #f0f0f0;
+            /* Set the background color of the container */
+            transition: transform 0.5s, background-color 0.5s;
+            /* Add transitions to the container */
+            /* transition syntax: transition: <property> <duration> <timing-function>; */
+            /* transform: The CSS property being transitioned */
+            /* background-color: Another CSS property being transitioned */
+            /* 0.5s: The duration of the transition animation in seconds */
+        }
+
+        .container:hover {
+            transform: rotate(30deg);
+            /* Apply the transform on hover */
+            background-color: #e0e0e0;
+            /* Change the background color on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS Transitions Example</h1> <!-- Added h1 element for the title -->
+        <p>This is a simple example of CSS transitions.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+.table {
+   width: 400px;
+   height: 300px;
+
+   /* Part of your solution goes here */
+   
+}
+
+.cardRed {
+   color: red;
+}
+
+.cardBlack {
+   color: black;
+}
+
+.card {
+   background-color: whitesmoke;
+   border: 1px solid black;         
+   width: 100px;
+   height: 160px;
+   line-height: 160px;
+   text-align: center;
+   font-size: 80px;
+
+   /* Part of your solution goes here */
+
+}      
+
+.cardTop {
+   /* Part of your solution goes here */
+
+}
+
+.cardBottom {
+   /* Part of your solution goes here */
+
+}
+
+.heart {
+   color: red;
+   font-size: 28px; 
+   width: 30px;
+   height: 30px;  
+   line-height: 30px;
+}
+
+.spade {
+   color: black;
+   font-size: 36px; 
+   width: 30px;
+   height: 30px;  
+   line-height: 30px;
+}
+
+.topLeft {
+   /* Part of your solution goes here */
+
+}
+
+.bottomRight {
+   /* Part of your solution goes here */
+
+}

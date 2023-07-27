@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Define the flex container */
+        .flex-container {
+            display: flex;
+            /* Specifies that the element is a flex container */
+            justify-content: center;
+            /* Centers the flex items along the main axis (horizontal) */
+            align-items: center;
+            /* Centers the flex items along the cross axis (vertical) */
+            height: 200px;
+            /* Specifies the height of the flex container */
+        }
+
+        /* Define the flex items */
+        .flex-item {
+            border: 1px solid black;
+            /* Adds a border around each flex item */
+            padding: 20px;
+            /* Adds padding inside each flex item */
+            text-align: center;
+            /* Centers the text inside each flex item */
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+                /* Changes to a column layout on screens with a maximum width of 600px */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+</body>
+
+</html>

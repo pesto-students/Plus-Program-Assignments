@@ -1,0 +1,52 @@
+/* Add your styles here */
+
+/* Given CSS rules below */
+body {
+   margin: 0;
+   font-family: Helvetica, sans-serif;
+}
+
+header {
+   border-bottom: 2px solid #93B5C6;
+   background-color: #DDEDAA;
+   padding: 8px;
+}
+
+.logo {
+   color: #BD4F6C;
+   font-size: 18px;
+}
+
+.content {
+   margin-left: 30px;
+}
+
+.title {
+   border-bottom: 1px dashed #93B5C6;
+}
+
+.title h1 {
+   color: #BD4F6C;
+}
+
+.title p {
+   color: #93B5C6;
+   margin-left: 30px;
+}
+
+.summary {
+   margin-top: 30px;
+}
+
+.summary > div {
+   background-color: #DDEDAA;
+   border: 2px solid #93B5C6;
+   border-radius: 5px;
+   color: #BD4F6C;
+   padding: 5px;
+   width: 210px;
+}
+
+.related-content {
+   margin-left: 100px;
+}

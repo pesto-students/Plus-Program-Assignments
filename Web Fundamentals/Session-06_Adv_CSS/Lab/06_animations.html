@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Animations Example</title> <!-- Added title for the HTML document -->
+    <style>
+        .container {
+            width: 200px;
+            /* Set the width of the container */
+            height: 200px;
+            /* Set the height of the container */
+            background-color: #f0f0f0;
+            /* Set the background color of the container */
+            animation: rotate 2s infinite;
+            /* Add animation to the container */
+            /* animation syntax: animation: <animation-name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; */
+            /* rotate: The name of the animation */
+            /* 2s: The duration of the animation in seconds */
+            /* infinite: The number of times the animation should repeat (in this case, infinitely) */
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+                /* Define the starting state of the animation */
+            }
+
+            100% {
+                transform: rotate(360deg);
+                /* Define the ending state of the animation */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS Animations Example</h1> <!-- Added h1 element for the title -->
+        <p>This is a simple example of CSS animations.</p>
+    </div>
+
+</body>
+
+</html>
