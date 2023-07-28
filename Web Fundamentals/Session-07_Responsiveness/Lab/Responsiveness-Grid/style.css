@@ -1,0 +1,205 @@
+<style>
+    /* add CSS styles for navbar, hero, and other sections here */
+    @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+    @font-face {
+      font-family: Sono;
+      src: url(https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap);
+    }
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+
+    /* Nav Section */
+    nav {
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    header {
+      text-align: center;
+      padding: 100px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Skills Section */
+    .skills {
+      background-color: #f2f2f2;
+      padding: 50px;
+    }
+
+    .skills ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .skills li {
+      margin: 0 30px;
+      text-align: center;
+    }
+
+    .skills img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    /* Experience Section */
+    .experience {
+      /* text-align: center; */
+      padding: 50px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .experience h2 {
+      margin-bottom: 20px;
+    }
+
+    .experience-item {
+      margin-bottom: 50px;
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .experience-item h3 {
+      margin-bottom: 10px;
+    }
+
+    .experience-item h4 {
+      font-weight: normal;
+      margin-top: 0;
+    }
+
+    .experience-item p {
+      margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    form {
+      margin: 50px auto;
+      width: 80%;
+      max-width: 600px;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    input[type="submit"] {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #333;
+    }
+    /* blog */
+
+    .blog {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+    }
+    
+    .post {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+    
+    .post h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+    
+    .post p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    
+    .read-more {
+      display: inline-block;
+      background-color: #ccc;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+    }
+    
+  </style>

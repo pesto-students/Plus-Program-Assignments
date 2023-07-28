@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Bootstrap Lab</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="script.js" defer></script>
+</head>
+<body>
+   <header>
+      <h1>Mediterranian Vacations</h1>
+   </header>
+   <nav>
+      <ul>
+         <li><a href="#featured">Featured Packages</a></li>
+         <li><a href="#exotic">Exotic Vacations</a></li>
+         <li><a href="#historic">Historic Locations</a></li>
+         <li><a href="#contact">Contact Us</a></li>
+      </ul>
+   </nav>
+   <div id="benefits">
+      <div>
+         <div class="benefits-inner-container">
+            <div>
+               <img src="checkmark.png" alt="checkmark">
+            </div>
+            <div class="benefit">
+               <strong>Affordable!</strong> Our vacation packages give you
+               the most bang for your buck.
+            </div>
+         </div>
+         <div class="benefits-inner-container">
+            <div>
+               <img src="checkmark.png" alt="checkmark">
+            </div>
+            <div class="benefit">
+               <strong>Quality!</strong> We use only the finest lodgings
+               and qualified tour guides.
+            </div>
+         </div>
+         <div class="benefits-inner-container">
+            <div>
+               <img src="checkmark.png" alt="checkmark">
+            </div>
+            <div class="benefit">
+               <strong>Cancel Anytime!</strong> You may cancel your trip
+               at any time for a full refund.
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <main>
+      <section id="featured">
+         <h2>Featured Packages</h2>
+         <div class="container-fluid">
+            <div class="row">
+               <div>
+                  <img src="egypt_600.jpg" alt="Great Sphyinx and pyramid">
+               </div>
+               <div>
+                  <h3>Egpyt</h3>
+                  <p>Egpyt is a land of enduring beauty and rich culture.
+                     Explore the capital city of <strong>Cairo</strong>,
+                     the <strong>Great Pyramids of Giza</strong>, and the
+                     iconic <strong>Great Sphinx</strong>!
+                  </p>
+                  <p>
+                     Packages include airfare, lodging, and several guided tours!
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="exotic">
+         <h2>Exotic Vacations</h2>
+         <div>
+            <div>
+               <div>
+                  <img src="greece_600.jpg" alt="Arial view of Santorini">
+               </div>
+               <div>
+                  <div>
+                     <h3>Greece</h3>
+                     <p>Enjoy the scenic, peaceful Greek island of <strong>Santorini</strong>.
+                        Take a cruise, soak in the sun, and explore the
+                        idyllic villages that sit atop the cliffs!
+                     </p>
+                     <p>
+                        Packages include airfare, overnight cruises, and lodging!
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="historic">
+         <h2>Historic Locations</h2>
+         <div>
+            <div>
+               <div>
+                  <img src="israel_600.jpg" alt="Jerusalem city scape">
+               </div>
+               <div>
+                  <div>
+                     <h3>Israel</h3>
+                     <p>Explore Israel's holy city of <strong>Jerusalem</strong>.
+                        Visit the <strong>Dome of the Rock</strong>,
+                        the <strong>Western Wall</strong>, the <strong>Church of the Holy Sepulchre</strong>,
+                        and other iconic sites!
+                     </p>
+                     <p>
+                        Packages include airfare, lodging, and several guided tours!
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="contact">
+         <h2>Contact Us</h2>
+         <p>
+            Our team of travel experts is readily available to make your dream vacation a reality!
+         </p>
+         <p>
+            <button id="send-message-btn" type="button" class="btn btn-primary" data-toggle="modal"
+               data-target="#contact-modal">Send a message</button>
+         </p>
+         
+         <!-- Add Bootstrap Alert here -->
+         
+
+         <p>
+            Or call us at <a href="tel:1-800-111-2222">1-800-111-2222</a>.
+         </p>
+
+         <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="contact-modal-label">Contact Us</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+                     <form>
+                        <div class="form-group">
+                           <label for="contact-name" class="col-form-label">Name?</label>
+                           <input type="text" class="form-control" id="contact-name">
+                        </div>
+                        <div class="form-group">
+                           <label for="contact-email" class="col-form-label">Email?</label>
+                           <input type="email" class="form-control" id="contact-email" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                           <label for="contact-interest" class="col-form-label">I'm interested in...</label>
+                           <select class="form-control" id="contact-interest">
+                              <option>Booking a vacation.</option>
+                              <option>Getting more information.</option>
+                              <option>Checking my vacation's status.</option>
+                           </select>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <button type="button" class="btn btn-primary" data-dismiss="modal">Send message</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <p>
+         <a href="mailto:travel@medvacations.com">travel@medvacations.com</a>
+      </p>
+      <p>
+         &copy; 2022 Mediterranian Vacations
+      </p>
+   </footer>
+</body>
+
+</html>

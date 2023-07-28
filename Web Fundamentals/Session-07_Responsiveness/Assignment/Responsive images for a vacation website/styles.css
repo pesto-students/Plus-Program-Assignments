@@ -1,0 +1,30 @@
+:root {
+   --theme-color: #7395AE;
+   --theme-dark-color: #557A95;
+   --primary-font-color: #5D5C61;
+   --link-font-color: white;
+}
+
+body {
+   font-family: Helvetica, sans-serif;
+   color: var(--primary-font-color);
+   padding: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: var(--theme-dark-color);
+}
+
+header > h1 {
+   color: var(--theme-dark-color);
+   font-size: 2rem;
+   margin: 10px 0;
+   text-shadow: 2px 2px 3px gray;
+}
+
+.stretch-image {
+   width: 95vw;
+}
+
+/* TODO: Add ul rule to show check.svg in background */
