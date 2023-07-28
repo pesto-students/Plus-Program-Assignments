@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Window Object Examples</title>
+</head>
+
+<body>
+  <h1>Window Object Examples</h1>
+
+  <p id="my-element">This is a paragraph.</p>
+
+  <button onclick="openWindow()">Open a New Window</button>
+  <button onclick="closeWindow()">Close the Current Window</button>
+  <button onclick="navigate()">Navigate to a New URL</button>
+
+  <script>
+    // Window Document Example
+    var myElement = window.document.getElementById("my-element");
+    myElement.textContent = "Hello, World!";
+
+    // Window Open Example
+    function openWindow() {
+      window.open("https://www.example.com", "example");
+    }
+
+    // Window Close Example
+    function closeWindow() {
+      window.close();
+    }
+
+    // Window Location Example
+    function navigate() {
+      window.location.href = "https://www.example.com";
+    }
+  </script>
+
+  <script>
+    // Window Screen Example
+    var screenWidth = window.screen.width;
+    var screenHeight = window.screen.height;
+    window.alert("Screen size: " + screenWidth + " x " + screenHeight);
+  </script>
+
+  <script>
+    // Window Navigator Example
+    var browserName = window.navigator.appName;
+    var browserVersion = window.navigator.appVersion;
+    console.log("Browser: " + browserName + " " + browserVersion);
+  </script>
+
+  <script>
+    // Window History Example
+    window.history.back();
+    window.history.forward();
+    window.history.go(-2);
+  </script>
+
+  <script>
+    // XMLHttpRequest Example
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://www.example.com/api/data");
+    xhr.send();
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        console.log(xhr.responseText);
+      }
+    };
+  </script>
+
+</body>
+
+</html>

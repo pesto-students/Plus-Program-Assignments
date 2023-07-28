@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Delegation Example</title>
+</head>
+
+<body>
+    <ul id="my-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <script>
+        const myList = document.querySelector('#my-list');
+
+        myList.addEventListener('click', (event) => {
+            if (event.target.tagName === 'LI') {
+                console.log(`${event.target.textContent} clicked`);
+            }
+        });
+    </script>
+</body>
+
+</html>

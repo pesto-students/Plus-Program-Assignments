@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Temperature Converter</title>
+      <script src="convert.js"></script>
+      <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         
+         label {
+            display: block;
+         }
+   
+         #errorMessage {
+            color: red;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Temperature Converter</h1>
+      <p>
+         <label for="cInput">Celsius:</label>
+         <input id="cInput" type="text">
+      </p>
+      <p>
+         <label for="fInput">Fahrenheit:</label>
+         <input id="fInput" type="text">
+      </p>
+      <input id="convertButton" type="button" value="Convert">
+      <p id="errorMessage">
+      </p>
+      <p>
+         <img id="weatherImage" src="warm.png" alt="Warm">
+      </p>
+   </body>
+
+</html>

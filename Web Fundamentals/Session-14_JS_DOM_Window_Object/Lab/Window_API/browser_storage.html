@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello, World Browser Storage example!</title>
+</head>
+
+<body>
+    <h1>Hello, World!</h1>
+
+    <script>
+        // Write "Hello, World!" to localStorage
+        localStorage.setItem("message", "Hello, World!");
+
+        // Write "Hello, World!" to sessionStorage
+        sessionStorage.setItem("message", "Hello, World!");
+
+        // Write "Hello, World!" to a cookie
+        var date = new Date();
+        date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000)); // Expire in 7 days
+        document.cookie = "message=Hello, World!; expires=" + date.toUTCString();
+
+        // Retrieve "Hello, World!" from localStorage and display it
+        var messageLS = localStorage.getItem("message");
+        document.write("<p>Message from localStorage: " + messageLS + "</p>");
+
+        // Retrieve "Hello, World!" from sessionStorage and display it
+        var messageSS = sessionStorage.getItem("message");
+        document.write("<p>Message from sessionStorage: " + messageSS + "</p>");
+
+        // Retrieve "Hello, World!" from the cookie and display it
+        var cookies = document.cookie.split("; ");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            if (cookie.indexOf("message=") === 0) {
+                var messageCookie = cookie.substring("message=".length, cookie.length);
+                document.write("<p>Message from cookie: " + messageCookie + "</p>");
+            }
+        }
+    </script>
+</body>
+
+</html>

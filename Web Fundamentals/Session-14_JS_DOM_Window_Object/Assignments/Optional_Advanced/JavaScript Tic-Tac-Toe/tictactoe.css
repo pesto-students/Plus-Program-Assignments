@@ -1,0 +1,28 @@
+body {
+   font-family: Roboto, Helvetica, sans-serif;
+}
+
+.x {
+   color: red;
+}
+
+.o {
+   color: blue;
+}
+
+#gameBoard {
+   font: 85px arial, sans-serif;
+   margin: 3px;
+
+   display: grid;
+   grid-template-columns: 100px 100px 100px;
+   grid-template-rows: 100px 100px 100px;
+   grid-gap: 10px;
+}
+
+#gameBoard > button {
+   border: 1px solid LightSkyBlue;
+   text-align: center;
+   font-size: 100%;
+   font-family: inherit;
+}

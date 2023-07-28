@@ -1,0 +1,91 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: Calibri, Arial;
+}
+
+input { 
+	display: none; /*Do NOT display radio buttons*/
+	width: auto;
+}
+
+.radioSelect {
+    display: inline-block; 
+    margin: 3px; 
+    padding: 2px 5px;
+    background: lightgray; 
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1em; 
+    color: black; 
+ }
+
+.radioSelect:hover { 
+	background: gray;
+	color: white;
+}
+
+input:checked + .radioSelect { 
+	background: green;
+	border: 1px solid green; 
+	color: white; 
+} 
+
+.column {
+	float: left;
+	height: auto;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+.output {
+	clear: both;
+}
+
+.container {
+	clear: both;
+	width: 875px;
+	max-width: 80%;
+	height: 90%;
+	min-height: 500px;	
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	background-size: 875px 100%;
+	background-color: #EBF4FA;
+}
+
+.warning {
+	float: left;
+	min-width: 875px;
+	padding: 10px 10px;	
+	background-color: red;
+	border: transparent;
+	border-radius: 5px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: white;
+}
+
+.score {	
+	clear: both;
+	float: left;
+	width: 100px;
+	height: 60px;
+	background-color: green;
+	border: 1px solid green;
+	border-radius: 5px;
+	color: white;
+	font-size: 2.2em;
+	/*Center the text*/
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px; /*Same as the div height*/
+	/*Position the div*/
+	position: relative;
+    top: 30px;
+    left: 735px;
+    z-index: 99; /*Place elements with this class in front of other elements*/
+}

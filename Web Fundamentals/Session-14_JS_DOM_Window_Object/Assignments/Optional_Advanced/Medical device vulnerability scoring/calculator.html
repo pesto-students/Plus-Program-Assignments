@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+   	<meta charset="UTF-8">
+   	<title>Vulnerability Scoring Calculator</title>
+   	<link href="calculator.css" type="text/css" rel="stylesheet"/>
+   	<script src="calculator.js" defer></script>
+   </head>
+	<body>
+		<div class="main" id="main">
+			<h1>Vulnerability Scoring Calculator</h1>
+			<div class="warning" id="warning">Select values for all categories to generate a score</div>
+			<div class="score" id="score">--</div>
+
+			<div class="container">
+				<div class="column">
+					<h4>Attack Vector</h4>
+					<input type="radio" name="AV" id="AV_N" value="AV_N"><label class="radioSelect" for="AV_N">Network</label>
+					<input type="radio" name="AV" id="AV_A" value="AV_A"><label class="radioSelect" for="AV_A">Adjacent Network</label>
+					<input type="radio" name="AV" id="AV_L" value="AV_L"><label class="radioSelect" for="AV_L">Local</label>
+					<input type="radio" name="AV" id="AV_P" value="AV_P"><label class="radioSelect" for="AV_P">Physical</label>
+
+					<h4>Attack Complexity</h4>
+					<input type="radio" name="AC" id="AC_L" value="AC_L"><label class="radioSelect" for="AC_L">Low</label>
+					<input type="radio" name="AC" id="AC_H" value="AC_H"><label class="radioSelect" for="AC_H">High</label>
+
+					<h4>Privilege Required</h4>
+					<input type="radio" name="PR" id="PR_N" value="PR_N"><label class="radioSelect" for="PR_N">None</label>
+					<input type="radio" name="PR" id="PR_L" value="PR_L"><label class="radioSelect" for="PR_L">Low</label>
+					<input type="radio" name="PR" id="PR_H" value="PR_H"><label class="radioSelect" for="PR_H">High</label> 
+
+					<h4>User Interaction</h4>
+					<input type="radio" name="UI" id="UI_N" value="UI_N"><label class="radioSelect" for="UI_N">None</label>
+					<input type="radio" name="UI" id="UI_R" value="UI_R"><label class="radioSelect" for="UI_R">Required</label>
+
+					<h4>Scope</h4>
+					<input type="radio" name="scope" id="scope_U" value="scope_U"><label class="radioSelect" for="scope_U">Unchanged</label>
+					<input type="radio" name="scope" id="scope_C" value="scope_C"><label class="radioSelect" for="scope_C">Changed</label>
+				</div>
+
+				<div class="column">
+					<h4>Confidentiality Impact</h4>
+					<input type="radio" name="conf" id="conf_N" value="conf_N"><label class="radioSelect" for="conf_N" >None</label>
+					<input type="radio" name="conf" id="conf_L" value="conf_L"><label class="radioSelect" for="conf_L" >Low</label>
+					<input type="radio" name="conf" id="conf_H" value="conf_H"><label class="radioSelect" for="conf_H" >High</label>
+
+					<h4>Integrity Impact</h4>
+					<input type="radio" name="integ" id="integ_N" value="integ_N"><label class="radioSelect" for="integ_N">None</label>
+					<input type="radio" name="integ" id="integ_L" value="integ_L"><label class="radioSelect" for="integ_L">Low</label>
+					<input type="radio" name="integ" id="integ_H" value="integ_H"><label class="radioSelect" for="integ_H">High</label>
+
+					<h4>Availability Impact</h4>
+					<input type="radio" name="avail" id="avail_N" value="avail_N"><label class="radioSelect" for="avail_N">None</label>
+					<input type="radio" name="avail" id="avail_L" value="avail_L"><label class="radioSelect" for="avail_L">Low</label>
+					<input type="radio" name="avail" id="avail_H" value="avail_H"><label class="radioSelect" for="avail_H">High</label>
+
+					<h4>Health Impact</h4>
+					<input type="radio" name="health" id="health_N" value="health_N"><label class="radioSelect" for="health_N">None</label>
+					<input type="radio" name="health" id="health_L" value="health_L"><label class="radioSelect" for="health_L">Low</label>
+					<input type="radio" name="health" id="health_H" value="health_H"><label class="radioSelect" for="health_H">High</label>
+
+					<h4>Sensitivity</h4>
+					<input type="radio" name="sens" id="sens_N" value="sens_N"><label class="radioSelect" for="sens_N">None</label>
+					<input type="radio" name="sens" id="sens_L" value="sens_L"><label class="radioSelect" for="sens_L">Low</label>
+					<input type="radio" name="sens" id="sens_H" value="sens_H"><label class="radioSelect" for="sens_H">High</label>
+				</div>
+			</div> <!-- End container div -->
+		</div> <!-- End main div -->		
+	</body>
+</html>
