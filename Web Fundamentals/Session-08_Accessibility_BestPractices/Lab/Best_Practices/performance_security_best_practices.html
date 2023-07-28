@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Website Title</title>
+    <!-- Performance Tip:  Minify HTML, CSS, JS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Hello, world!</h1>
+    <!-- Before lazy loading -->
+    <img src="image.jpg" alt="Image">
+
+    <!--Performance Tip:  Use lazy loading ,After lazy loading -->
+    <!--Performance Tip:  Minimize the size of image as much as you can with best UX -->
+    <img src="placeholder.jpg" data-src="image.jpg" alt="Image" loading="lazy">
+
+
+    <!-- Instead of inline JavaScript -->
+    <button onclick="alert('Hello, world!')">Click me</button>
+
+    <!-- Performance Tip: Use external JavaScript -->
+    <button id="myButton">Click me</button>
+    <script src="script.js"></script>
+
+    <!--Security Tip:  Use HTTPS for secure data transmission -->
+    <form action="https://example.com/login" method="post">
+        <!-- ... -->
+    </form>
+    <form id="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+
+    <!--Security Tip:Always validate and sanitize user input to your HTML forms 
+        to prevent security vulnerabilities such as SQL injection and 
+        cross-site scripting (XSS) attacks. -->
+    <script>
+        // Function to handle form submission
+        function submitForm(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Call form validation function
+            if (validateForm()) {
+                document.getElementById('loginForm').submit();
+            }
+        }
+        // Function to perform form validation
+        function validateForm() {
+            // Perform form validation
+        }
+
+        // Add event listener to form submission
+        document.getElementById('loginForm').addEventListener('submit', submitForm);
+    </script>
+
+
+</body>
+
+</html>

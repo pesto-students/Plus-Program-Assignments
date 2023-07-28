@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Best Practices- Semantic HTML</title>
+    <style>
+        /* CSS Best Practice 1:  Instead of using nested selectors */
+        .header-container .logo a {
+            /* ... */
+        }
+
+        /* CSS Best Practice 2:Use direct child selector */
+        .header-container>.logo>a {
+            /* ... */
+            /* Instead of */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+            /* CSS Best Practice 5:Use shorthand */
+            margin: 10px 20px;
+        }
+
+        /* CSS Best Practice 3:In a separate CSS file */
+        .red-text {
+            color: red;
+            font-size: 18px;
+        }
+
+        /* CSS Best Practice 4:Media queries for responsive design */
+        @media (max-width: 768px) {
+            /* Styles for screens with max-width of 768px */
+            /* ... */
+        }
+    </style>
+
+</head>
+<!-- CSS Best Practice 6: Use meaningful class and ID names: Choose descriptive class and ID names that reflect the purpose of the element,
+rather than generic names like "box" or "red" . For example: -->
+
+<body>
+    <!-- Instead of using class="box" -->
+    <div class="header-container">
+        <!-- ... -->
+    </div>
+    <!-- Instead of inline CSS -->
+    <div style="color: red; font-size: 18px;">Hello, world!</div>
+
+    <!--  CSS Best Practice 7:Use external CSS -->
+    <div class="red-text">Hello, world!</div>
+
+</body>
+
+</html>

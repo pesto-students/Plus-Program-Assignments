@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ARIA Roles Example</title>
+</head>
+
+<body>
+
+    <h1 id="main-heading">My Accessibility Example</h1>
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+
+    <article role="article">
+        <section id="section1" role="region" aria-labelledby="section1-heading">
+            <h2 id="section1-heading">Section 1</h2>
+            <p>This is the content of section 1.</p>
+        </section>
+        <section id="section2" role="region" aria-labelledby="section2-heading">
+            <h2 id="section2-heading">Section 2</h2>
+            <p>This is the content of section 2.</p>
+        </section>
+        <section id="section3" role="region" aria-labelledby="section3-heading">
+            <h2 id="section3-heading">Section 3</h2>
+            <p>This is the content of section 3.</p>
+        </section>
+    </article>
+
+    <aside role="complementary">
+        <h2>Related Links</h2>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </aside>
+
+</body>
+
+</html>
