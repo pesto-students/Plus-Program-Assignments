@@ -9,17 +9,17 @@ The following style rules should be added to styles.css:
 - The default fonts (in order of priority)  should be Roboto, Helvetica, and sans-serif 
 - The heading "Comparison of Dealer Incentives and Loan Offers" should be 16px font using color #444444 and have centered text
 - Define a container class whose contents is centered, has a 5 pixel margin, and defines  a font size of 13px 
-- Each offer is defined in a <div> tag with the class offer. Define the offer class such that: 
+- Each offer is defined in a \<div> tag with the class offer. Define the offer class such that: 
 - Each offer is displayed inline-block, with a fixed width of 400 pixels, a 4 pixel margin, and centered text
 - Each offer has a 1 pixel solid border using color #cccccc
-- The offer title is defined in a <div> tag with offerTitle class. Define the 
+- The offer title is defined in a \<div> tag with offerTitle class. Define the 
 
 offerTitle class such that: 
 
 - The title uses 14px bold font with color #ffffff
 - The title's background is colored #00b3b3
 - The title has no margin and 15 pixels of padding 
-- The offer contents are defined in a <div> tag with class offerContents. Define the offerContents class such that: 
+- The offer contents are defined in a \<div> tag with class offerContents. Define the offer contents class such that: 
   - Each offer contents div has 20 pixels of padding and background colored #fafafa
 - Define CSS rules such that all tables have the following styling: 
   - The table should have a width of 100%, background colored #ffffff, and no border spacing 
