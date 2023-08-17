@@ -17,7 +17,7 @@ Website has 4 pages:
 
 The home page for Restaurant Reviews is index.html, which is a common filename for a website's home page. Most web servers by default serve the index.html file when a URL does not specify an explicit filename. Ex: Accessing http:/pesto.tech/ in a web browser loads http://pesto.tech/index.html. 
 
-To maintain a consistent look, all the website's pages have the same <header> tags with navigation links and <footer> tags that specify the copyright information. The home page is broken into several sections with <section> tags, and each of the featured restaurants are asssigned to a section.Home Page:
+To maintain a consistent look, all the website's pages have the same \<header> tags with navigation links and \<footer> tags that specify the copyright information. The home page is broken into several sections with \<section> tags, and each of the featured restaurants are asssigned to a section. Home Page:
 
 ![](Aspose.Words.1383cd42-cfca-4dae-8ab2-56d076e8a1b9.002.jpeg)
 
