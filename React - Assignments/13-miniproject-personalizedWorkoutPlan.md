@@ -20,6 +20,11 @@
     *   Obtain an API key for the OpenAI API (GPT-3).
     *   Set up API integration by making requests to the OpenAI API endpoint using Axios or a similar library.
     *   Pass user preferences and goals as inputs to the API for generating personalized workout recommendations.
+    Note: OpenAI is free to 3 months, If it is expired can use any of the alternative from this link - https://github.com/NovaOSS/free-ai-apis
+    Or create a dummy API using any of the below links:
+    - https://jsonplaceholder.typicode.com/
+    - https://fakestoreapi.com/
+    - https://dummyjson.com/
 5.  API Response Handling:
     *   Parse and handle the response received from the OpenAI API.
     *   Extract the generated workout plan and relevant details from the response.
