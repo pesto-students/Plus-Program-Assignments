@@ -10,9 +10,6 @@
 - Get your database design reviewed by your mentor.
 - Start creating the following APIs:
 
-## API Endpoints
-
-Sure, I've fixed the numbering for the API endpoints in your guidelines:
 
 ## API Endpoints
 
@@ -31,7 +28,7 @@ Sure, I've fixed the numbering for the API endpoints in your guidelines:
 4. **CRUD Operations:**
    - Create CRUD versions of any one of above resources API.
 
-Please let me know if you need further assistance with creating your Wealth Portfolio Web API Service!
+
 
 ## Guidelines
 

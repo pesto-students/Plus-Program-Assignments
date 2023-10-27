@@ -26,7 +26,7 @@
 4. **CRUD Operations:**
    - Create CRUD versions of any one of above resources API.
 
-Please let me know if you need further assistance with creating your Wealth Portfolio Web API Service!
+
 
 ## Guidelines
 
